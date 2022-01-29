@@ -1,8 +1,14 @@
+import logo from './logo.svg';
 import * as THREE from 'three'
 import React, { Suspense, useEffect, useRef, useState, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, useAnimations, Reflector, useTexture } from '@react-three/drei'
 import useStore from './store'
+
+const HPI = Math.PI / 2
+const vec = new THREE.Vector3()
+const obj = new THREE.Object3D()
+const red = new THREE.Color('#900909')
 
 function App() {
   return (
