@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import * as THREE from 'three'
+import React, { Suspense, useEffect, useRef, useState, useMemo } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { useGLTF, useAnimations, Reflector, useTexture } from '@react-three/drei'
+import useStore from './store'
 
 function App() {
   return (
