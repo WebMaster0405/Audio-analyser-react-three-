@@ -48,7 +48,7 @@ const userStore = create((set, get) => {
 	const drums = createAudio('/drums.mp3', { threshold: 10, expire: 500 })
 	const snare = createAudio('/snare.mp3', { threshold: 40, expire: 500 })
 	const synth = createAudio('/synth.mp3')
-	return {
+	  return {
     loaded: false,
     clicked: false,
     audio: { drums: mockData(), snare: mockData(), synth: mockData() },
