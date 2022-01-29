@@ -1,8 +1,10 @@
+import { render } from 'react-dom'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Footer } from '@pmndrs/branding'
+import useStore from './store'
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
